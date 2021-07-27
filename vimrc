@@ -17,6 +17,7 @@ syntax on
 set encoding=utf-8
 set clipboard=unamedplus
 set number
+set ttymouse=xterm2
 set mouse=a
 set tabstop=4
 set softtabstop=4
