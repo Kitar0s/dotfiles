@@ -10,6 +10,9 @@ inoremap <C-l> <Right>
 "Changes the leader key from default to SPACE"
 let mapleader=" "
 
+"Some Leader Remaps" 
+nnoremap <Leader>d dd
+
 "Turning on syntax highlighting"
 syntax on
 
