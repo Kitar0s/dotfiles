@@ -124,6 +124,10 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
 fi
 
 # Aliases
-alias clip="xclip -selection clipboard"
 alias python="python3"
+
+# Functions 
+clip() {
+	cat $1 | xclip -selection clipboard
+}
 
