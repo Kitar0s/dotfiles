@@ -126,6 +126,10 @@ fi
 # Aliases
 alias python="python3"
 
+#Env. Variables
+DOCKER_FORMAT="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMANDS\t\
+{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
+
 # Functions 
 clip() {
 	cat $1 | xclip -selection clipboard

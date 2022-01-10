@@ -8,7 +8,7 @@ inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
 "Auto complete C comments" 
-inoremap /* /**/<Left><Left><Space>
+inoremap // /**/<Left><Left><Space>
 
 "Changes the leader key from default to SPACE"
 let mapleader=" "
