@@ -126,9 +126,18 @@ fi
 # Aliases
 alias python="python3"
 
-#Env. Variables
-DOCKER_FORMAT="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMANDS\t\
-{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
+#Docker Alias
+if [ $(which docker) ] ; then 
+	alias dkps='docker ps --format "ID\t {{.ID}}\nNAME\t {{.Names}}\nIMAGE\t {{.Image}}\nPORTS\t {{.Ports}}\nCMD\t\
+	 {{.Command}}\nCREATED\t {{.CreatedAt}}\nSTATUS\t {{.Status}}\n"'
+
+# Aliases require container ID / Name
+	alias dkrm='docker rm -f'
+	alias dkstp='docker stop'
+	alias dklog='docker logs'
+	alias dkvol='docker volumes ls'
+	 
+fi
 
 # Functions 
 clip() {
