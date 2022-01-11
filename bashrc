@@ -129,7 +129,7 @@ alias python="python3"
 #Docker Alias
 if [ $(which docker) ] ; then 
 	alias dkps='docker ps --format "ID\t {{.ID}}\nNAME\t {{.Names}}\nIMAGE\t {{.Image}}\nPORTS\t {{.Ports}}\nCMD\t\
-	 {{.Command}}\nCREATED\t {{.CreatedAt}}\nSTATUS\t {{.Status}}\n"'
+{{.Command}}\nCREATED\t {{.CreatedAt}}\nSTATUS\t {{.Status}}\n"'
 
 # Aliases require container ID / Name
 	alias dkrm='docker rm -f'
