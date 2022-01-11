@@ -133,10 +133,11 @@ if [ $(which docker) ] ; then
 
 # Aliases require container ID / Name
 	alias dkrm='docker rm -f'
+	alias dkrun='docker run -d'
 	alias dkstp='docker stop'
 	alias dklog='docker logs'
 	alias dkvol='docker volumes ls'
-	 
+	alias dkstrt='docker start'
 fi
 
 # Functions 
