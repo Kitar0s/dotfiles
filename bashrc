@@ -136,7 +136,7 @@ if [ $(which docker) ] ; then
 	alias dkrun='docker run -d'
 	alias dkstp='docker stop'
 	alias dklog='docker logs'
-	alias dkvol='docker volumes ls'
+	alias dkvol='docker volume ls'
 	alias dkstrt='docker start'
 fi
 
